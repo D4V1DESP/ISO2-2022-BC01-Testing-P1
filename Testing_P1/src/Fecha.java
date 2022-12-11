@@ -6,12 +6,9 @@ public class Fecha {
 	protected int anio;
 	
 	public Fecha(int dia, int mes, int anio) {
-		P1_Metodos.comprobacionEntero(dia);
-		P1_Metodos.comprobacionEntero(mes);
-		P1_Metodos.comprobacionEntero(anio);
-		this.dia = dia;
-		this.mes = mes;
-		this.anio = anio;
+		this.dia = P1_Metodos.comprobacionEntero(dia);
+		this.mes = P1_Metodos.comprobacionEntero(mes);
+		this.anio = P1_Metodos.comprobacionEntero(anio);
 	}
 
 	public int getDia() {
