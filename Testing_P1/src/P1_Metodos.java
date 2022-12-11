@@ -6,7 +6,7 @@ public class P1_Metodos {
 	public static boolean comprobarBisiesto(Fecha fecha) {
 		boolean bisiesto;
 		
-		if (fecha.getAnio() % 4 == 0) {
+		if (fecha.getAnio() % 4 == 0 && ((fecha.getAnio() % 100 != 0) || (fecha.getAnio() % 400 == 0))) {
 			bisiesto = true;
 		}else {
 			bisiesto = false;
